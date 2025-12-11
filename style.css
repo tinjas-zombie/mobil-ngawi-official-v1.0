@@ -1,0 +1,521 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'roboto' , sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* header bagian atas  */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 0px;
+    top: 0;
+    background-color: white;
+    position: sticky;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 9999;
+}
+
+header button {
+    display: none;
+}
+
+header .logo h1 {
+    width: 380px;
+    padding: 0px;
+    font-family: 'poppins' , sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'verdana' , sans-serif;
+    padding: 28px 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+nav ul li:nth-child(5) a {
+    background-color: brown;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 2px;
+    border-bottom: 0px;
+}
+
+nav ul li:nth-child(5) a:hover {
+    padding: 10px 25px;
+    background-color: wheat;
+    border-bottom: 0px;
+    color: black;
+}
+
+nav ul li a i {
+    font-size: clamp(10px,1.5rem,28px);
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid brown;
+}
+
+/* hero bannernya , ucapan selamat datang anggap aja begitu wkwkkwkw */
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+}
+
+.hero .konten {
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px 20px 20px;
+}
+
+.hero .konten .left {
+    min-width: 350px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 0px 0px 40px 50px;
+    max-width: 600px;
+    gap: 30px;
+}
+
+.hero .konten .left .welcome {
+    line-height: 23px;
+    font-size: clamp(10px,1rem,25px);
+    font-weight: bold;
+    font-family: 'poppins' , sans-serif;
+}
+
+.hero .konten .left h2 {
+    font-size: clamp(12px,1.9rem,28px);
+    font-family: "poppins" , sans-serif;
+}
+
+.hero .konten .left .list-page a {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .konten .left .list-page span {
+    color: white;
+}
+
+.hero .konten .left .utama {
+    font-weight: 500;
+    line-height: 23px;
+    font-size: clamp(10px,.9rem,20px);
+    color: teal;
+}
+
+.hero .konten .left .list-page {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .konten .left .list-page a {
+    text-decoration: none;
+    background-color: rgb(205, 140, 20);
+    padding: 16px 25px;
+    color: white;
+    border-radius: 2px;
+    transition: all .5s;
+}
+
+.hero .konten .left .list-page a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(138, 94, 11);
+}
+
+.konten .left .list-page a:nth-child(2) {
+    background-color: black;
+}
+
+.konten .left .list-page a:nth-child(2):hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.hero .konten .left span {
+    font-family: 'verdana' , sans-serif;
+    color: brown;
+}
+
+.hero .konten .right {
+    max-width: 550px;
+}
+
+.hero .right svg {
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    max-width: 650px;
+}
+
+.hero .right img {
+    flex: 1 1 400px;
+    min-width: 350px;
+    max-width: 550px;
+    object-position: center;
+    object-fit: cover;
+}      
+
+/* hero kedua */
+.hero-kedua {
+    width: 100%;
+    background: linear-gradient(130deg,brown,purple);
+}
+
+.hero-kedua .judul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'poppins' , sans-serif;
+    font-size: clamp(10px,1.2rem,30px);
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.hero-kedua .konten {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px 40px 50px;
+}
+
+.hero-kedua .konten .left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.hero-kedua .konten .left img {
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 550px;
+    min-height: 350px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero-kedua .konten .right {
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-kedua .konten .right .box {
+    min-width: 300px;
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: purple;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 10px;
+    border: 1.5px solid #eae9edad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 20px 60px 20px;
+    gap: 20px;
+}
+
+.hero-kedua .konten .right .box .judul h5 {
+    font-size: clamp(15px,1.6rem,30px);
+    padding: 0px;
+    font-family: 'poppins' , sans-serif;
+}
+
+.hero-kedua .konten .right .box p {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: clamp(14px,1.4rem,28px);
+}
+
+.hero-kedua .konten .right .box p i {
+    font-size: clamp(14px,1.4rem,28px);
+    color: lightblue;
+}
+
+/* main */
+
+main {
+    width: 100%;
+}
+
+/* main {konten pertama} */
+main .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .info h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: clamp(10px,1.6rem,34px);
+}
+
+main .info .konten {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 40px 20px;
+    gap: 20px;
+}
+
+main .info .konten .box {
+    flex: 1 1 350px;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all .3s;
+    background-color: #ffffff;
+    border: 1.5px solid #dddde0bb;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    padding: 20px;
+    gap: 20px;
+    transition: all .4s;
+}
+
+main .info .konten .box:hover i {
+    background-color: rgb(132, 132, 244);
+    border: 1.5px solid rgba(87, 87, 227, 0.555);
+    color: white;
+}
+
+main .info .konten .box h3 {
+    text-align: left;
+    padding: 0px;
+    line-height: 25px;
+    font-size: clamp(10px,1.2rem,30px);
+}
+
+main .info .konten .box p {
+    line-height: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .info .konten .box a {
+    text-decoration: none;
+    gap: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    font-size: clamp(12px,1rem,30px);
+}
+
+main .info .konten .box .pelajarin i {
+    background-color: transparent;
+    padding: 0px;
+    font-size: 1rem;
+    margin-top: 4px;
+    border: none;
+    color: rgb(59, 53, 219);
+}
+
+main .info .konten .box i {
+    transition: all .4s;
+    font-size: clamp(10px,1.5rem,34px);
+    background-color: rgba(132, 132, 244, 0.418);
+    width: max-content;
+    padding: 10px;
+    border: 1.5px solid rgba(126, 126, 235, 0.578);
+    border-radius: 10px;
+    color: rgb(59, 53, 219);
+}
+
+main .info .konten .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'poppins' , sans-serif;
+}
+
+@media screen and (max-width:767px) {
+    header {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .logo {
+        width: 0px;
+    }
+
+    header .logo h1 {
+        font-size: clamp(10px,1.8rem,28px);
+    }
+
+    header button {
+        anchor-name: --button;
+        border: none;
+        background-color: transparent;
+        display: flex;
+    }
+
+    .container-submenu {
+        position-anchor: --button;
+    }
+
+    .container-submenu:popover-open {
+        display: flex;
+        flex-direction: column;
+        position-area: left bottom;
+        gap: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: darkgreen;
+        padding: 5px 0px;
+    }
+
+    .container-submenu a {
+        text-decoration: none;
+        padding: 10px 50px 10px 10px;
+        background-color: rgb(184, 87, 52);
+        color: white;
+    }
+
+    header button i {
+        font-size: clamp(10px,1.5rem,26px);
+        color: black;
+    }
+
+    header nav {
+        width: 0px;
+        display: none;
+    }
+
+    .hero {
+        padding: 20px 0px;
+    }
+
+    .hero .konten {
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .hero .konten .left {
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .konten .left .list-page {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .konten .left .list-page a {
+        width: max-content;
+    }
+
+    .konten .right {
+        display: none;
+    }
+
+    .konten .right img {
+        flex: 1 1 150px;
+        min-width: 100px;
+        max-width: 300px;
+    }
+    .konten-aside a {
+        display: none;
+    }
+
+    .hero-kedua .konten {
+        padding: 30px 20px 40px 30px;
+    }
+
+    .hero-kedua .konten .left {
+        display: none;
+    }
+
+    .hero-kedua .konten .right .box p {
+        padding: 0px;
+        gap: 15px;
+    }
+
+    .hero-kedua .konten .right .box p i {
+        padding: 5px;
+    }
+
+    .hero-kedua .konten .right .box {
+        border: 2px white solid;
+        padding: 20px 20px 60px 20px;
+    }
+
+    .hero-kedua .konten .right .box .judul h5 {
+        text-align: center;
+        font-size: clamp(10px,1.8rem,30px);
+    }
+}
